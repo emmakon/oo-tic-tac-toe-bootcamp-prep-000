@@ -38,4 +38,9 @@ def turn_count
   @board.count {|token| token == "X" || token == "O"}
 end
 
+def position_taken?(index)
+  !(@board[index].nil? || @board[index] == " ")
+end
+
+
 end
