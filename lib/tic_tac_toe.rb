@@ -31,7 +31,11 @@ def move(index, token = "X")
 end
 
 def current_player
-  turn_count % 2 == 0 ? "X" : "O"
+  if turn_count % 2 == 0
+    "X"
+  else
+    "O"
+  end
 end
 
 def turn_count
