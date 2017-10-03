@@ -23,7 +23,7 @@ def display_board
 end
 
 def input_to_index(input)
-index = input.to_i - 1
+input.to_i - 1
 end
 
 def move(index, token = "X")
@@ -48,6 +48,19 @@ def valid_move?(index)
 else
   return false
 end
+end
+
+def turn
+  puts "Please enter 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
+  if valid_move?(index)
+    move(index, current_player)
+  else
+    puts "Invalid input."
+    turn
+  end
+  display_board
 end
 
 end
