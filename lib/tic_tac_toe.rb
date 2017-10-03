@@ -83,4 +83,12 @@ def won?
    false
 end
 
+def full?
+  if  @board.include?(" ")
+    false
+  else
+    true
+  end
+end
+
 end
