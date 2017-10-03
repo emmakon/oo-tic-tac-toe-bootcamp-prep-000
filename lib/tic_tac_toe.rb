@@ -99,4 +99,12 @@ def draw?
   end
 end
 
+def over?
+  if won? || draw?
+    return true
+  else
+    false
+  end
+end
+
 end
