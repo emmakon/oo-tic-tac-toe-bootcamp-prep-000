@@ -27,4 +27,5 @@ index = input.to_i - 1
 end
 
 def move(index, token = "X")
+  
 end
