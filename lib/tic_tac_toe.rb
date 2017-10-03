@@ -27,5 +27,6 @@ index = input.to_i - 1
 end
 
 def move(index, token = "X")
+    @board[index] = current_player
 end
 end
